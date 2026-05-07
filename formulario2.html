@@ -33,6 +33,9 @@ label{display:block;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-t
 input{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:14px 18px;font-family:'Poppins',sans-serif;font-size:.95rem;color:var(--white);outline:none;transition:border-color .2s,background .2s}
 input::placeholder{color:rgba(214,214,214,.35)}
 input:focus{border-color:rgba(89,4,124,.8);background:rgba(255,255,255,.1)}
+textarea{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:14px 18px;font-family:'Poppins',sans-serif;font-size:.95rem;color:var(--white);outline:none;transition:border-color .2s,background .2s;resize:vertical;min-height:90px}
+textarea::placeholder{color:rgba(214,214,214,.35)}
+textarea:focus{border-color:rgba(89,4,124,.8);background:rgba(255,255,255,.1)}
 
 .btn{display:block;width:100%;background:linear-gradient(90deg,var(--green1),var(--green2));color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;padding:18px 40px;border-radius:6px;cursor:pointer;border:none;text-align:center;transition:transform .2s,box-shadow .2s;margin-top:28px}
 .btn:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(40,167,53,.4)}
@@ -66,6 +69,14 @@ input:focus{border-color:rgba(89,4,124,.8);background:rgba(255,255,255,.1)}
     <div class="form-group">
       <label for="email">E-mail</label>
       <input type="email" id="email" name="email" placeholder="seu@email.com">
+    </div>
+    <div class="form-group">
+      <label for="formacao">Formação / Especialização / Áreas de interesse</label>
+      <textarea id="formacao" name="formacao" placeholder="Ex: Psicologia, Medicina, Terapia de casal..."></textarea>
+    </div>
+    <div class="form-group">
+      <label for="motivacao">O que te motiva a aprofundar o conhecimento na área da sexualidade?</label>
+      <textarea id="motivacao" name="motivacao" placeholder="Escreva sua resposta aqui..."></textarea>
     </div>
     <button type="submit" class="btn">ACESSAR MATERIAL</button>
   </form>
